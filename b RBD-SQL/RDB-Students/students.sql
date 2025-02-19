@@ -1,0 +1,10 @@
+SELECT * FROM Students WHERE Department = 'Physics' LIMIT 2;
+SELECT Department, COUNT(*) as StudentCount FROM Students GROUP BY Department LIMIT 2;
+SELECT * FROM Students WHERE GPA > 3.5 LIMIT 2;
+SELECT Department, AVG(Age) as AverageAge FROM Students GROUP BY Department LIMIT 2;
+SELECT * FROM Students WHERE GraduationYear = 2025 LIMIT 2;
+SELECT * FROM Students ORDER BY GPA DESC LIMIT 2;
+SELECT COUNT(*) as TotalStudents FROM Students LIMIT 2;
+SELECT Name, Email FROM Students ORDER BY Name LIMIT 2;
+SELECT AVG(GPA) as AverageGPA FROM Students LIMIT 2;
+SELECT * FROM Students WHERE Name LIKE 'A%' LIMIT 2;
